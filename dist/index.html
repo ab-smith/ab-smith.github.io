@@ -362,10 +362,10 @@
                 </div>
 
                 <div class="absolute right-0 bottom-0 mr-4 mb-4 hidden md:block">
-                    <button class="rounded-l-full border-r bg-gray-100 text-gray-500 focus:outline-none hover:text-indigo-500 font-bold w-12 h-10" x-on:click="testimonialActive = testimonialActive === 1 ? 4 : testimonialActive - 1">
+                    <button class="rounded-l-full border-r bg-gray-100 text-gray-500 focus:outline-none hover:text-indigo-500 font-bold w-12 h-10" x-on:click="testimonialActive = testimonialActive === 1 ? 7 : testimonialActive - 1">
                             &#8592;
                         </button>
-                    <button class="rounded-r-full bg-gray-100 text-gray-500 focus:outline-none hover:text-indigo-500 font-bold w-12 h-10" x-on:click="testimonialActive = testimonialActive >= 4 ? 1 : testimonialActive + 1">
+                    <button class="rounded-r-full bg-gray-100 text-gray-500 focus:outline-none hover:text-indigo-500 font-bold w-12 h-10" x-on:click="testimonialActive = testimonialActive >= 7 ? 1 : testimonialActive + 1">
                             &#8594;
                         </button>
                 </div>
@@ -416,6 +416,23 @@
                                 Abder has also marketing skills and presentation abilities, beyond expectations you may have regarding a product manager job. I would work with Abder if I take a chance to create my own company, can't say more!
                             </p>
                         </div>
+
+                        <div x-show.immediate="testimonialActive === 6">
+                            <p class="text-gray-600 serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl" x-show.transition="testimonialActive == 6">
+                                I've worked in the same team as Abderrahmane for a while. During that time, Abder showed great technical skills and a vision for the project: how to improve both the quality of the product and the efficiency of the developers, all the while keeping in
+                                mind that his actions should enhance the workplace happiness. He knew how to communicate his vision both with his colleagues and with upper management. Simply put, Abderrahmane has a comprehensive understanding of a software
+                                project combined with excellent people skills.
+                            </p>
+                        </div>
+
+                        <div x-show.immediate="testimonialActive === 7">
+                            <p class="text-gray-600 serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl" x-show.transition="testimonialActive == 7">
+                                I have the opportunity to work with Abderrahmane as Product Line Manager. I was impressed by his professional attitude in every circumstances and its proven technical background & skills. Abder Abderrahmane is a great personality, self-motivated, self-disciplined,
+                                rigorous, Open minded, high energy, startup minded, Customer Focused, and have a LARGE expertise in Cybersecurity technology & Market. I like also it's 360 approach on the Cybersecurity market whatever on technical and
+                                business perspectives, and globally its very large scientific background. It's a great pleasure to work day by day with Abder, and I recommend his profile without hesitation !
+                            </p>
+                        </div>
+
                     </div>
 
                     <div class="flex my-4 justify-center items-center">
@@ -424,6 +441,8 @@
                         <button @click.prevent="testimonialActive = 3" class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-4 w-4 inline-block bg-indigo-600 rounded-full mx-2" :class="{'h-4 w-4 opacity-25 bg-indigo-300 text-gray-600': testimonialActive != 3, 'h-6 w-6 opacity-100 bg-indigo-600 text-white': testimonialActive == 3 }"></button>
                         <button @click.prevent="testimonialActive = 4" class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-4 w-4 inline-block bg-indigo-600 rounded-full mx-2" :class="{'h-4 w-4 opacity-25 bg-indigo-300 text-gray-600': testimonialActive != 4, 'h-6 w-6 opacity-100 bg-indigo-600 text-white': testimonialActive == 4 }"></button>
                         <button @click.prevent="testimonialActive = 5" class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-4 w-4 inline-block bg-indigo-600 rounded-full mx-2" :class="{'h-4 w-4 opacity-25 bg-indigo-300 text-gray-600': testimonialActive != 5, 'h-6 w-6 opacity-100 bg-indigo-600 text-white': testimonialActive == 5 }"></button>
+                        <button @click.prevent="testimonialActive = 6" class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-4 w-4 inline-block bg-indigo-600 rounded-full mx-2" :class="{'h-4 w-4 opacity-25 bg-indigo-300 text-gray-600': testimonialActive != 6, 'h-6 w-6 opacity-100 bg-indigo-600 text-white': testimonialActive == 6 }"></button>
+                        <button @click.prevent="testimonialActive = 7" class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-4 w-4 inline-block bg-indigo-600 rounded-full mx-2" :class="{'h-4 w-4 opacity-25 bg-indigo-300 text-gray-600': testimonialActive != 7, 'h-6 w-6 opacity-100 bg-indigo-600 text-white': testimonialActive == 7 }"></button>
                     </div>
 
                     <div class="flex justify-center px-6 pt-2 pb-6 md:py-6">
@@ -450,6 +469,16 @@
                         <div class="text-center" x-show="testimonialActive == 5">
                             <h2 class="text-sm md:text-base font-bold text-gray-700 leading-tight">Vincent K.</h2>
                             <small class="text-gray-500 text-xs md:text-sm truncate">Enterprise Account Executive, Apple</small>
+                        </div>
+
+                        <div class="text-center" x-show="testimonialActive == 6">
+                            <h2 class="text-sm md:text-base font-bold text-gray-700 leading-tight">Alexis G.</h2>
+                            <small class="text-gray-500 text-xs md:text-sm truncate">Senior Software Engineer, Squarepoint Capital</small>
+                        </div>
+
+                        <div class="text-center" x-show="testimonialActive == 7">
+                            <h2 class="text-sm md:text-base font-bold text-gray-700 leading-tight">Philippe A.</h2>
+                            <small class="text-gray-500 text-xs md:text-sm truncate">Senior Sales Account Executive, Equinix</small>
                         </div>
                     </div>
                 </div>
