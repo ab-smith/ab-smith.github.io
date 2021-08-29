@@ -1,0 +1,15 @@
+{
+    "name": "ui",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build:css": "tailwind build -i src/style.css -o dist/style.css"
+    },
+    "keywords": [],
+    "author": "Abderrahmane Smimite",
+    "license": "GPL",
+    "dependencies": {
+        "tailwindcss": "^2.2.4"
+    }
+}
