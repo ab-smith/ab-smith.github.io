@@ -6,9 +6,9 @@ import Pricing from "@components/pricing.astro";
 
 const pricing = [
   {
-    name: "Personal",
-    price: "Free",
-    popular: false,
+    name: "Self-managed",
+    price: "2990 €",
+    popular: true,
     features: [
       "Lifetime free",
       "Up to 3 users",
@@ -23,14 +23,14 @@ const pricing = [
     },
   },
   {
-    name: "Startup",
+    name: "Cloud-instance",
     price: {
-      monthly: "$19",
+      monthly: "3990 €",
       annual: "$16",
       discount: "10%",
       original: "$24",
     },
-    popular: true,
+    popular: false,
     features: [
       "All Free Features",
       "Up to 20 users",
@@ -68,13 +68,17 @@ const pricing = [
   <Container>
     <Sectionhead>
       <Fragment slot="title">Pricing</Fragment>
-      <Fragment slot="desc"
-        >Simple & Predictable pricing. No Surprises.</Fragment
-      >
+      <Fragment slot="desc">
+        Predictable and flat pricing up to 20 users. Extra discount applies for multi-year subscription.
+      </Fragment>
     </Sectionhead>
 
     <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-screen-lg mt-12">
       {pricing.map((item) => <Pricing plan={item} />)}
     </div>
   </Container>
+  <Container>
+    Looking for free trial?
+  </Container>
 </Layout>
+
