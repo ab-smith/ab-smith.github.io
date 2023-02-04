@@ -6,21 +6,12 @@ import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 
 const menuitems = [
   {
-    title: "Features",
-    path: "#",
-    children: [
-      { title: "Action", path: "#" },
-      { title: "Another action", path: "#" },
-      { title: "Dropdown Submenu", path: "#" },
-    ],
+    title: "Mira",
+    path: "/mira",
   },
   {
     title: "Pricing",
     path: "/pricing",
-  },
-  {
-    title: "About",
-    path: "/about",
   },
   {
     title: "Blog",
@@ -30,6 +21,19 @@ const menuitems = [
     title: "Contact",
     path: "/contact",
   },
+  {
+    title: "More",
+    children: [
+      {
+        title: "Team",
+        path: "/team",
+      },
+      {
+        title: "Agile Security Framework",
+        path: "/asf",
+      },
+    ],
+  },
 ];
 ---
 
@@ -38,9 +42,7 @@ const menuitems = [
     <Astronav>
       <div class="flex w-full lg:w-auto items-center justify-between">
         <a href="/" class="text-lg"
-          ><span class="font-bold text-slate-800">Astro</span><span
-            class="text-slate-500">ship</span
-          >
+          ><span class="font-bold text-slate-800">intuitem</span>
         </a>
         <div class="block lg:hidden">
           <MenuIcon class="w-4 h-4 text-gray-800" />
@@ -80,8 +82,8 @@ const menuitems = [
     </Astronav>
     <div>
       <div class="hidden lg:flex items-center gap-4">
-        <a href="#">Log in</a>
-        <Link href="#" size="md">Sign up</Link>
+        <a href="#">Free trial</a>
+        <Link href="#" size="md">Log In</Link>
       </div>
     </div>
   </header>
