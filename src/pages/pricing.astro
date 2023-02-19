@@ -7,16 +7,14 @@ import Pricing from "@components/pricing.astro";
 const pricing = [
   {
     name: "Self-managed",
-    price: "2990 €",
+    price: {
+      annual: "1990 €",
+      monthly: "1990 €",
+      original: "2990 €",
+      discount: "33%",
+    },
     popular: true,
-    features: [
-      "Lifetime free",
-      "Up to 3 users",
-      "Unlimited Pages",
-      "Astro Sub domain",
-      "Basic Integrations",
-      "Community Support",
-    ],
+    features: ["Deploy MIRA on your own infrastructure", "ABC", "DEF", "GHI", "JKL"],
     button: {
       text: "Get Started",
       link: "/",
@@ -25,20 +23,13 @@ const pricing = [
   {
     name: "Cloud-instance",
     price: {
-      monthly: "3990 €",
+      monthly: "2990 €",
       annual: "$16",
       discount: "10%",
-      original: "$24",
+      original: "3990 €",
     },
     popular: false,
-    features: [
-      "All Free Features",
-      "Up to 20 users",
-      "20 Custom domains",
-      "Unlimited Collaborators",
-      "Advanced Integrations",
-      "Priority Support",
-    ],
+    features: ["We take care of hosting and management", "ABC", "DEF", "GHI", "JKL"],
     button: {
       text: "Get Started",
       link: "#",
@@ -69,7 +60,9 @@ const pricing = [
     <Sectionhead>
       <Fragment slot="title">Pricing</Fragment>
       <Fragment slot="desc">
-        Predictable and flat pricing up to 20 users. Extra discount applies for multi-year subscription.
+        Pricing is <span class="font-semibold">yearly</span> and flat up to 20 users.
+        A discount of 33% applies for the first year with multi-year subscription.<br/>
+        Self-managed offer is <span class="font-semibold">completely free</span> for education, healthcare and non-profit organizations.
       </Fragment>
     </Sectionhead>
 
@@ -78,7 +71,9 @@ const pricing = [
     </div>
   </Container>
   <Container>
-    Looking for free trial?
+    <div class="text-center p-4 m-4">
+      Start a free 30-days trial today!
+    </div>
+    
   </Container>
 </Layout>
-
