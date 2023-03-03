@@ -8,13 +8,16 @@ const pricing = [
   {
     name: "Self-managed",
     price: {
-      annual: "1990 €",
-      monthly: "1990 €",
-      original: "2990 €",
-      discount: "33%",
+      monthly: "3600 €",
     },
     popular: true,
-    features: ["Deploy MIRA on your own infrastructure", "ABC", "DEF", "GHI", "JKL"],
+    features: [
+      "Yearly-billing and flat for up to 20 users",
+      "Deploy MIRA on your own infrastructure",
+      "Standard support (tickets and knowledge base)",
+      "Access to updates (upgrade at your own pace)",
+
+    ],
     button: {
       text: "Get Started",
       link: "/",
@@ -23,13 +26,17 @@ const pricing = [
   {
     name: "Cloud-instance",
     price: {
-      monthly: "2990 €",
-      annual: "$16",
-      discount: "10%",
-      original: "3990 €",
+      monthly: "4800 €",
     },
     popular: false,
-    features: ["We take care of hosting and management", "ABC", "DEF", "GHI", "JKL"],
+    features: [
+      "Yearly-billing and flat for up to 20 users",
+      "We handle hosting and operations",
+      "Standard support (tickets and knowledge base)",
+      "Automatic updates",
+      "Automated backups",
+
+    ],
     button: {
       text: "Get Started",
       link: "#",
@@ -40,12 +47,12 @@ const pricing = [
     price: "Custom",
     popular: false,
     features: [
-      "All Pro Features",
-      "Unlimited Custom domains",
-      "99.99% Uptime SLA",
+      "Customized features",
+      "Custom domains",
       "SAML & SSO Integration",
-      "Dedicated Account Manager",
-      "24/7 Phone Support",
+      "MSSP custom packaging",
+      "Branding and white-labeling",
+      "Advanced support"
     ],
     button: {
       text: "Contact us",
@@ -60,9 +67,9 @@ const pricing = [
     <Sectionhead>
       <Fragment slot="title">Pricing</Fragment>
       <Fragment slot="desc">
-        Pricing is <span class="font-semibold">yearly</span> and flat up to 20 users.
-        A discount of 33% applies for the first year with multi-year subscription.<br/>
-        Self-managed offer is <span class="font-semibold">completely free</span> for education, healthcare and non-profit organizations.
+        Predictive, simple and cost-eeficient.<br />
+        Self-managed offer is <span class="font-semibold">completely free</span>
+        for education, healthcare and non-profit organizations.
       </Fragment>
     </Sectionhead>
 
@@ -71,9 +78,6 @@ const pricing = [
     </div>
   </Container>
   <Container>
-    <div class="text-center p-4 m-4">
-      Start a free 30-days trial today!
-    </div>
-    
+    <div class="text-center p-4 m-4">Start a free 30-days trial today!</div>
   </Container>
 </Layout>
