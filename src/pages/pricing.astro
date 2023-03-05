@@ -10,13 +10,15 @@ const pricing = [
     price: {
       monthly: "3600 €",
     },
-    popular: true,
+    popular: false,
     features: [
-      "Yearly-billing and flat for up to 20 users",
       "Deploy MIRA on your own infrastructure",
-      "Standard support (tickets and knowledge base)",
-      "Access to updates (upgrade at your own pace)",
-
+      "Yearly-billing and flat for up to 20 users",
+      "Standard support",
+      "Manage your updates and backups",
+      "Integration on-demand",
+      "Community portal",
+      "Beta versions preview"
     ],
     button: {
       text: "Get Started",
@@ -28,14 +30,16 @@ const pricing = [
     price: {
       monthly: "4800 €",
     },
-    popular: false,
+    popular: true,
     features: [
-      "Yearly-billing and flat for up to 20 users",
       "We handle hosting and operations",
-      "Standard support (tickets and knowledge base)",
-      "Automatic updates",
-      "Automated backups",
-
+      "Yearly-billing and flat for up to 20 users",
+      "France-located datacenter",
+      
+      "Standard support",
+      "Automatic backups & updates (with notification)",
+      "Standard SLA",
+      "Community portal",
     ],
     button: {
       text: "Get Started",
@@ -47,12 +51,13 @@ const pricing = [
     price: "Custom",
     popular: false,
     features: [
-      "Customized features",
-      "Custom domains",
-      "SAML & SSO Integration",
+      "Customized features for your needs",
+      "Deploy on custom domains",
+      "Integration assistance (to fit your infrastructure)",
+      "SAML & SSO",
       "MSSP custom packaging",
       "Branding and white-labeling",
-      "Advanced support"
+      "Advanced support and SLA (according to your needs)",
     ],
     button: {
       text: "Contact us",
@@ -67,9 +72,7 @@ const pricing = [
     <Sectionhead>
       <Fragment slot="title">Pricing</Fragment>
       <Fragment slot="desc">
-        Predictive, simple and cost-eeficient.<br />
-        Self-managed offer is <span class="font-semibold">completely free</span>
-        for education, healthcare and non-profit organizations.
+        Mira pricing is predictive, simple and cost-eeficient.<br />
       </Fragment>
     </Sectionhead>
 
@@ -78,6 +81,15 @@ const pricing = [
     </div>
   </Container>
   <Container>
-    <div class="text-center p-4 m-4">Start a free 30-days trial today!</div>
+    <div class="mt-6 px-36">
+    <div class="text-align my-4 p-4 rounded-lg border-2">
+      <div class="text-2xl font-semibold mb-2">Free</div>
+      <div class="">30-days to try out all the features of MIRA. No credit card required. <a href="#" class="font-semibold text-indigo-600">Start now!</a>
+        <div><span class="text-orange-500 font-semibold">New:</span> Self-managed offer is <span class="font-semibold">free forever</span>
+          for education, healthcare and non-profit organizations.</div>
+      
+      </div>
+    </div>
+  </div>
   </Container>
 </Layout>
