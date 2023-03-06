@@ -1,10 +1,11 @@
 ---
 draft: false
-name: "Marcell Ziemann"
-title: "Principal Strategist"
+name: "Eric Laubacher"
+title: "Managing Partner"
 avatar: {
-    src: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?&fit=crop&w=280",
-    alt: "Marcell Ziemann"
+    src: "src/assets/eric.png",
+    alt: "Eric Laubacher"
 }
+linkedin: "https://www.linkedin.com/in/eric-laubacher-a545a616b/"
 publishDate: "2022-11-08 15:39"
 ---
