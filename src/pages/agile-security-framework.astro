@@ -3,14 +3,21 @@ import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 ---
+
 <Layout title="Agile Security Framework">
-    <Container>
-        <Sectionhead>
-            <Fragment slot="title">Agile Security Framework</Fragment>
-            <Fragment slot="desc">We are a small passionate team.</Fragment>
-        </Sectionhead>
-        <p>
-            The Agile Security Framework is a set of practices that can be used to improve the security of your software. It is based on the Agile Manifesto and the 12 principles of the Agile Manifesto.
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Agile Security Framework</Fragment>
+      <Fragment slot="desc">Security program for Agile Teams</Fragment>
+    </Sectionhead>
+    <div class="my-4 px-4">
+        <p class="my-4">
+            Agile methodologies are today's standard to develop software. However, security is still tricky to include the development process. As agile practitioners ourselves, we have developed a security framework that is easy to integrate into your workflow.
         </p>
-    </Container>
+        <p class="my-4">
+            The documentation of ASF has grown big over the years and has moved to its own website. You can find it here: <a href="https://agilesecurityframework.com" class="text-indigo-500">agilesecurityframework.com</a>
+        </p>
+        <p class="my-4">Interested in contributing? You're welcome to reach out 🤗</p>
+    </div>
+  </Container>
 </Layout>
