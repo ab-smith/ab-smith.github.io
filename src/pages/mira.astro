@@ -2,6 +2,9 @@
 import Container from "@components/container.astro";
 import Layout from "@layouts/Layout.astro";
 import Sectionhead from "@components/sectionhead.astro";
+import { Picture } from "@astrojs/image/components";
+import MiraLogo from "assets/mira_logo.png";
+import Puzzle from "assets/puzzle.png";
 ---
 
 <Layout title="Mira">
@@ -10,95 +13,130 @@ import Sectionhead from "@components/sectionhead.astro";
       <Fragment slot="title">Mira</Fragment>
       <Fragment slot="desc">All-in-One Risk Management Platform</Fragment>
     </Sectionhead>
-    <main class="my-8 font-mono">
+    <main class="my-8">
       <!-- Vision -->
-      <div class="px-8 py-4 text-left">
+      <div class="px-8 py-4 text-left mb-4 rounded border-2">
         <div class="text-xl font-semibold text-indigo-600">Vision</div>
         <div class="text-sm mb-4">
           Why are we even bothering to create another risk management software?
         </div>
-        <div class="text-align">
-          <p>
-            As cybersecurity practitioners, we have firsthand experience with
-            the challenges of performing risk analysis for our clients. We have
-            seen how difficult it can be to fit into existing, complex processes
-            that ultimately end up being a waste of time and resources, but also
-            starting from scratch each time to duplicate the same complexity.
-          </p>
-          <p>
-            Mira was born out of these experiences. We recognized the need for a
-            risk management platform that could simplify the process and provide
-            actionable insights. What started as a small project for our
-            internal needs quickly became a comprehensive solution that we knew
-            could benefit many organizations facing similar challenges.
-          </p>
-          <p>
-            We saw a gap in the market for an intuitive, comprehensive, and
-            cost-efficient tool that could help organizations handle their
-            cybersecurity risks effectively. We believe in risk-driven
-            methodologies and are confident that Mira can make a significant
-            difference in how businesses approach risk management and enhance
-            their overall security posture.
-          </p>
+        <div class="md:flex">
+          <div class="md:w-1/6">
+            <Picture
+              src={MiraLogo}
+              alt="Mira Logo"
+              widths={[500]}
+              loading="eager"
+              format="avif"
+              sizes=" 25%"
+            />
+          </div>
+          <div class="text-align md:w-5/6">
+            <p>
+              As cybersecurity practitioners, we have firsthand experience with
+              the challenges of performing risk analysis for our clients. We
+              have seen how difficult it can be to fit into existing, complex
+              processes that ultimately end up being a waste of time and
+              resources, but also starting from scratch each time to duplicate
+              the same complexity.
+            </p>
+            <p>
+              Mira was born out of these experiences. We recognized the need for
+              a risk management platform that could simplify the process and
+              provide actionable insights. What started as a small project for
+              our internal needs quickly became a comprehensive solution that we
+              knew could benefit many organizations facing similar challenges.
+            </p>
+            <p>
+              We saw a gap in the market for an intuitive, comprehensive, and
+              cost-efficient tool that could help organizations handle their
+              cybersecurity risks effectively. We believe in risk-driven
+              methodologies and are confident that Mira can make a significant
+              difference in how businesses approach risk management and enhance
+              their overall security posture.
+            </p>
+          </div>
         </div>
       </div>
 
       <!-- Principles -->
-      <div class="bg-slate-50 px-8 py-4 text-left">
-        <div class="text-xl font-semibold text-indigo-600">Principles</div>
-        <div class="text-sm mb-4">
+      <div class="px-8 py-4 text-left mb-4">
+        <div class="text-xl font-semibold text-indigo-600 text-right">
+          Principles
+        </div>
+        <div class="text-sm mb-4 text-right">
           The building principles that make MIRA unique
         </div>
-        <p>
-          <span class="font-semibold text-emerald-500">Approach-agnostic:</span>
-          regardless of the risk analysis methodology, we all produce the same content
-          with the same intent, and MIRA helps you focus on that. It also serves
-          as a safeguard to focus on what matters and avoid getting lost in one approach's
-          specifics.
-        </p>
-        <p>
-          <span class="font-semibold text-emerald-500">Intuitive:</span> we believe
-          that the best way to make a tool intuitive is to make it simple. We have
-          designed Mira to be as straigntforward as possible through multiple iterations
-          and interaction with cyber security practitioners.
-        </p>
-        <p>
-          <span class="font-semibold text-emerald-500">Comprehensive:</span> we have
-          designed Mira to be a one-stop shop for all your risk management needs.
-          The best way to achieve this is to provide a platform that can be used
-          by all stakeholders involved in the risk management process and reduce
-          the context switching as much as possible.
-        </p>
-        <p>
-          <span class="font-semibold text-emerald-500">Cost-effective:</span> we
-          believe that cybersecurity should be accessible to everyone. We have designed
-          Mira to be cost-effective for the core features. Power users can also use
-          our customization options to tailor the solution to their specific needs.
-        </p>
-        <p>
-          <span class="font-semibold text-emerald-500"
-            >Beyond the "spreadsheet":</span
-          > we wanted MIRA to be more than another typing tool. It has features to
-          review your analysis for coherence, remind you of the deadlines for mitigations,
-          build analytics for reporting, and so many more capabilities
-        </p>
-        <p>
-          <span class="font-semibold text-emerald-500">Productivity:</span> the actual
-          value of analysts is their expertise in producing a relevant risk analysis.
-          The UI is structured to minimize the time spent on formatting and switching
-          and instead use the catalogs and previous analyses to focus on the content.
-        </p>
-        <p>
-          <span class="font-semibold text-emerald-500"
-            >Deployment flexibility:</span
-          > Mira can be deployed on-premise or in the cloud, depending on your maturity
-          and constraints. We offer a free trial to help you decide which deployment
-          option is best.
-        </p>
+        <div class="md:flex">
+          <div class="md:w-1/2">
+            <p>
+              <span class="font-semibold text-emerald-500"
+                >Approach-agnostic:</span
+              >
+              regardless of the risk analysis methodology, we all produce the same
+              content with the same intent, and MIRA helps you focus on that. It
+              also serves as a safeguard to focus on what matters and avoid getting
+              lost in one approach's specifics.
+            </p>
+            <p>
+              <span class="font-semibold text-emerald-500">Intuitive:</span> we believe
+              that the best way to make a tool intuitive is to make it simple. We
+              have designed Mira to be as straigntforward as possible through multiple
+              iterations and interaction with cyber security practitioners.
+            </p>
+            <p>
+              <span class="font-semibold text-emerald-500">Comprehensive:</span>
+              we have designed Mira to be a one-stop shop for all your risk management
+              needs. The best way to achieve this is to provide a platform that can
+              be used by all stakeholders involved in the risk management process
+              and reduce the context switching as much as possible.
+            </p>
+            <p>
+              <span class="font-semibold text-emerald-500">Cost-effective:</span
+              > we believe that cybersecurity should be accessible to everyone. We
+              have designed Mira to be cost-effective for the core features. Power
+              users can also use our customization options to tailor the solution
+              to their specific needs.
+            </p>
+            <p>
+              <span class="font-semibold text-emerald-500"
+                >Beyond the "spreadsheet":</span
+              > we wanted MIRA to be more than another typing tool. It has features
+              to review your analysis for coherence, remind you of the deadlines
+              for mitigations, build analytics for reporting, and so many more capabilities
+            </p>
+            <p>
+              <span class="font-semibold text-emerald-500">Productivity:</span> the
+              actual value of analysts is their expertise in producing a relevant
+              risk analysis. The UI is structured to minimize the time spent on formatting
+              and switching and instead use the catalogs and previous analyses to
+              focus on the content.
+            </p>
+            <p>
+              <span class="font-semibold text-emerald-500"
+                >Deployment flexibility:</span
+              > Mira can be deployed on-premise or in the cloud, depending on your
+              maturity and constraints. We offer a free trial to help you decide
+              which deployment option is best.
+            </p>
+          </div>
+          <div class="md:w-1/2 md:flex">
+            <div class="m-auto">
+              <Picture
+                src={Puzzle}
+                alt="Mira Logo"
+                widths={[1000]}
+                loading="eager"
+                format="avif"
+                sizes=" 25%"
+              />
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- Featues -->
-      <div class="px-8 py-4">
+      <div class="px-8 py-4 mb-4 border-2 rounded">
         <div class="text-xl font-semibold text-indigo-600">Features</div>
         <div class="mb-4 text-sm">
           Core features that can be supercharged to fit your needs
@@ -125,7 +163,7 @@ import Sectionhead from "@components/sectionhead.astro";
       </div>
 
       <!-- Get started -->
-      <div class="bg-slate-50 px-8 py-4">
+      <div class="px-8 py-4 mb-4">
         <div class="text-xl font-semibold text-indigo-600">Get started</div>
         <div class="text-sm mb-4">Help me choose the most suitable offer</div>
         <p>
