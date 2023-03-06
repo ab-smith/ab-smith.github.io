@@ -3,7 +3,7 @@ draft: false
 name: "Eric Laubacher"
 title: "Managing Partner"
 avatar: {
-    src: "src/assets/eric.png",
+    src: "/eric.png",
     alt: "Eric Laubacher"
 }
 linkedin: "https://www.linkedin.com/in/eric-laubacher-a545a616b/"

@@ -47,7 +47,7 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
             </div>
 
             <div class="mt-4 text-center">
-              <a class="text-lg text-gray-800">{teamMemberEntry.data.name}</a>
+              <a class="text-lg text-gray-800" href={teamMemberEntry.data.linkedin}>{teamMemberEntry.data.name}</a>
               <h3 class="text-sm text-slate-500">
                 {teamMemberEntry.data.title}
               </h3>

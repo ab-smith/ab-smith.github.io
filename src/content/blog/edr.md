@@ -1,5 +1,5 @@
 ---
-draft: false
+draft: true
 title: EDR
 category: research
 author: Abder. Smimite
