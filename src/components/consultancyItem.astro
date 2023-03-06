@@ -2,8 +2,8 @@
 const { item } = Astro.props;
 ---
 
-<div class="p-2 m-2 rounded shadow">
-    item.name
-    item.description
+<div class="p-4 m-2 rounded shadow bg-indigo-500 hover:bg-indigo-400 text-white h-40">
+    <div class="text-xl mb-2 font-mono font-semibold">{item.title}</div>
+    <div class="text-sm">{item.desc}</div>
 
 </div>
